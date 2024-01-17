@@ -29,7 +29,7 @@ public class SortSelectedTest {
     }
 
     @Test
-    public void whenSort() {
+    public void whenSort2() {
         int[] data = new int[] {9, 7};
         int[] result = SortSelected.sort(data);
         int[] expected = new int[] {7, 9};
