@@ -35,4 +35,5 @@ public class SortSelectedTest {
         int[] expected = new int[] {7, 9};
         assertThat(result).containsExactly(expected);
     }
+
 }
