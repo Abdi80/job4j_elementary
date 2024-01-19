@@ -6,13 +6,12 @@ public class Machine {
     public static int[] change(int money, int price) {
         int[] coins = {10, 5, 2, 1};
         int[] result = new int[100];
-        int change = money - price;
         int j = 0;
-        for (int i = 0; i < coins.length; i++) {
-            while (change >= coins[i]) {
-                result[j] = coins[i];
+        for (int i : coins) {
+            while (money - price >= i) {
+                result[j] = i;
                 j++;
-                change -= coins[i];
+                money -= i;
             }
         }
         int size = j;
