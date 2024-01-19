@@ -5,7 +5,7 @@ public class TwoNumberSum {
         int[] result = new int[0];
         int i = 0;
         int j = array.length - 1;
-        while (true) {
+        while (i != j) {
             if (array[i] + array[j] == target) {
                 result = new int[2];
                 result[0] = i;
@@ -13,14 +13,8 @@ public class TwoNumberSum {
                 break;
             } else if (array[i] + array[j] < target) {
                 i++;
-                if (i == j) {
-                    break;
-                }
-            } else if (array[i] + array[j] > target) {
+            } else {
                 j--;
-                if (j == i) {
-                    break;
-                }
             }
 
         }
