@@ -20,5 +20,4 @@ public class MathCalculator {
         System.out.println("Сумма разности и деления равна: " + differenceAndDivision(10, 20));
         System.out.println("Сумма всех операций: " + allOperations(10, 20));
     }
-
 }

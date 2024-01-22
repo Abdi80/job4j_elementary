@@ -4,7 +4,6 @@ public class Max {
     public static int max(int left, int right) {
         int result = left >= right ? left : right;
         return result;
-
     }
 
     public static void main(String[] args) {
@@ -14,6 +13,5 @@ public class Max {
         System.out.println(result);
         result = max(4, 4);
         System.out.println(result);
-
     }
 }

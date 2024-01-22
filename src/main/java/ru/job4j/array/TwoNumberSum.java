@@ -16,7 +16,6 @@ public class TwoNumberSum {
             } else {
                 j--;
             }
-
         }
         return result;
     }
