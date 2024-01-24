@@ -2,8 +2,17 @@ package ru.job4j.condition;
 
 public class Max {
     public static int max(int left, int right) {
-        int result = left >= right ? left : right;
-        return result;
+        return left >= right ? left : right;
+    }
+
+    public static int max(int first, int second, int third) {
+        int result = max(first, second);
+        return result >= third ? result : third;
+    }
+
+    public static int max(int first, int second, int third, int fourth) {
+        int result = max(first, second, third);
+        return result >= fourth ? result : fourth;
     }
 
     public static void main(String[] args) {
